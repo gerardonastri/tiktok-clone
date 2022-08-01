@@ -1,0 +1,90 @@
+.upload{
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    top: 100px;
+    left: 50%;
+    transform:  translate(-50%);
+    background-color: #F8F6F8;
+    z-index: 999;
+    border-radius: 1rem;
+    padding: 50px;
+}
+.upload > h2{
+    margin-bottom: 0px;
+}
+.upload > span{
+    color: gray;
+    font-size: 14px;
+}
+.upload__form{
+    margin-top: 50px;
+}
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.inputGroup label{
+    font-weight: 600;
+    font-size: 15px;
+}
+.inputGroup input{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    width: 40%;
+}
+.inputGroup select{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    width: 40%;
+}
+.form__actions{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.form__actions-discard{
+    background-color: white;
+    border: 2px solid #CFCECF;
+    padding: 10px 70px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.form__actions-post{
+    background-color: var(--color-pink);
+    border: none;
+    padding: 10px 70px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .upload{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 70px;
+        padding: 0;
+    }
+    .form__actions{
+        flex-direction: column;
+    }
+    .inputGroup input, .inputGroup select{
+        width: 100%;
+    }
+}

@@ -1,0 +1,150 @@
+.post{
+    position: relative;
+    display: flex;
+
+}
+.close{
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.post__video{
+    flex: 1.5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://media.istockphoto.com/illustrations/teal-gradient-background-ombre-pastel-mint-green-wave-pattern-sea-illustration-id969907250?k=20&m=969907250&s=612x612&w=0&h=cMHf8RCfg2d41JErvXPuAKxVTe1Jjt71rkmeocVE7eQ=');
+}
+.post__video video{
+    width: 100%;
+    height: auto;
+}
+.post__main{
+    flex: 1;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.post__main-up{
+    flex: 1;
+}
+.post__info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.post__desc{
+    font-size: 14px;
+    color: gray;
+    padding-left: 30px;
+}
+.post__likes{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+.post__likes-flex{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post__icon{
+    background-color: #F1EFF1;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+
+.post__main-comments{
+    background-color: #F8F6F8;
+    margin-top: 20px;
+    border-top: 2px solid rgb(229 231 235);
+    padding-top: 100px;
+    flex: 1.5;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.noComments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.noComments svg{
+    font-size: 60px;
+    color: black;
+}
+.noComments h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.post__main-createComment{
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    gap: 15px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+.post__main-createComment input{
+    background-color: inherit;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 8px;
+    outline: none;
+    color: black;
+    padding: 15px 20px;
+    padding-right: 200px;
+}
+
+.post__main-createComment button{
+    background-color: inherit;
+    outline: none;
+    color: gray;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.post__icon.active{
+    color: var(--color-pink);
+}
+
+.comments-container{
+    padding-left: 20px;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 700px) {
+    .post{
+        flex-direction: column;
+    }
+    .post__main-createComment input{
+        padding-right: unset;
+    }
+    .post__likes {
+        margin-top: 10px;
+    }
+    .post__main{
+        padding-top: 20px;
+    }
+    .noComments h3{
+        width: 95%;
+    }
+    .post__main{
+       height: 100;
+    }
+}

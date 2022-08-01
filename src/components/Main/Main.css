@@ -1,0 +1,10 @@
+.main{
+    flex: 7;
+    border-left: 2px solid rgb(229 231 235);
+}
+.postsContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

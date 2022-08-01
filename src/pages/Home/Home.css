@@ -1,0 +1,12 @@
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+.blurred{
+    opacity: 0.1;
+}

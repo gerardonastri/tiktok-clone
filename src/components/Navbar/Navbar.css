@@ -1,0 +1,114 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgb(229 231 235);
+    background-color: white;
+    z-index: 999;
+}
+
+.navbar__logo{
+    height: 100%;
+}
+.navbar__logo img{
+    height: 100%;
+    width: 200px;
+}
+
+.navbar__search{
+    background-color: #F1EFF1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 1rem;
+}
+.navbar__search input{
+    background-color: inherit;
+    outline: none;
+    border: none;
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(156 163 175);
+}
+
+.navbar__search svg{
+    color: rgb(156 163 175);
+    cursor: pointer;
+}
+.navbar__login button{
+    background-color: white;
+    border-radius: 0.7rem;
+    border: 1px solid rgb(156 163 175);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 40px;
+    color: rgb(107 114 128);
+}
+
+.navbar__user{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar__upload{
+    border: 1px solid rgb(156 163 175);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar__user-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar__logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgb(229 231 235);
+    color: red;
+    cursor: pointer;
+}
+.navbar__logout svg{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        width: unset;
+    }
+    .navbar__search{
+        display: none;
+    }
+    .navbar__logo{
+        display: flex;
+        align-items: center;
+    }
+    .navbar__logo img{
+        width: 150px;
+        height: 80%;
+    }
+    .navbar__user{
+        gap: 20px;
+    }
+    .navbar__upload span{
+        display: none;
+    }
+}
